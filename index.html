@@ -711,7 +711,7 @@
                             <span class="place">Personal Interest</span>
                         </div>
                     </div>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">Interested in AI tools. I know how to use prompt engineering to get the best results.</p>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Interested in AI tools. I know how to use prompt engineering to get best results.</p>
                     <span class="status current">Active Learner</span>
                 </div>
             </div>
@@ -798,9 +798,9 @@
 
                 // Loop through projects and create cards
                 projects.forEach(project => {
-                    // Skip "fork" projects if you only want your own original work
-                    // Remove the line below if you want to show forks too
-                    if (project.fork) return; 
+                    // --- FORK FILTER REMOVED ---
+                    // This line used to be here: if (project.fork) return;
+                    // Now it will show ALL projects.
 
                     const card = document.createElement('div');
                     card.className = 'repo-card reveal';
